@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sifreKasa.Data", "sifreKasa.Data\sifreKasa.Data.csproj", "{038B97D0-A8C8-4B1B-9126-A3348B0D85E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sifreKasa.Web", "sifreKasa.Web\sifreKasa.Web.csproj", "{FD520D14-4E9D-4845-92D5-8E00B9CAE901}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{038B97D0-A8C8-4B1B-9126-A3348B0D85E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{038B97D0-A8C8-4B1B-9126-A3348B0D85E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{038B97D0-A8C8-4B1B-9126-A3348B0D85E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{038B97D0-A8C8-4B1B-9126-A3348B0D85E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD520D14-4E9D-4845-92D5-8E00B9CAE901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD520D14-4E9D-4845-92D5-8E00B9CAE901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD520D14-4E9D-4845-92D5-8E00B9CAE901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD520D14-4E9D-4845-92D5-8E00B9CAE901}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {520FCC7C-54E4-42F8-90CC-990347EF77BE}
+	EndGlobalSection
+EndGlobal
