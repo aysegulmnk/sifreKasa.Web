@@ -19,8 +19,7 @@ namespace sifreKasa.Data.Context
         }
 
         public DbSet<Users> Users { get; set; }
-        public DbSet<Accounts> Accounts { get; set; } 
-
+        public DbSet<Accounts> Accounts { get; set; }
     }
 }
 

@@ -28,6 +28,85 @@
                     </ul>
                 </div>
             </div>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Kullanıcı Girişi</title>
+                <link rel="stylesheet" href="styles.css"> <!-- CSS dosyası -->
+            </head>
+            <body>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Kullanıcı Kaydı</title>
+                    <link rel="stylesheet" href="styles.css">
+                </head>
+                <body>
+                    <div class="container">
+                        <h1>Kullanıcı Kaydı</h1>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="username">Kullanıcı Adı:</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Şifre:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-Posta:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">Ad:</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Soyad:</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                            <button type="submit">Kaydol</button>
+                        </form>
+                    </div>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="register.js"></script>
+                </body>
+            </html>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Kullanıcı Girişi</title>
+                <link rel="stylesheet" href="styles.css"> <!-- CSS dosyası -->
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Kullanıcı Girişi</h1>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Kullanıcı Adı:</label>
+                            <input type="text" id="username" name="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Şifre:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <button type="submit">Giriş Yap</button>
+                    </form>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery eklentisi -->
+                <script src="login.js"></script> <!-- Giriş işlemi için JavaScript dosyası -->
+            </body>
+        </html>
+
+            </body>
+        </html>
+
         </nav>
     </header>
     <div class="container">
@@ -45,6 +124,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/register.js"></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
