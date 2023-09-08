@@ -1,5 +1,5 @@
 ﻿$("#registerForm").submit(function (event) {
-    event.preventDefault(); // Formun normal gönderimini engelle
+    event.preventDefault();
 
     var formData = {
         username: $("#username").val(),
@@ -11,15 +11,15 @@
 
     $.ajax({
         type: "POST",
-        url: "/Account/Register", // Sunucu tarafındaki kayıt işlemi için uygun URL'yi ayarlayın
+        url: "/Account/Register", 
         data: JSON.stringify(formData),
         contentType: "application/json",
         success: function (response) {
-            // Kayıt işlemi başarılı olduysa burada bir işlem yapabilirsiniz
+            
             alert("Kayıt işlemi başarıyla tamamlandı.");
         },
         error: function (error) {
-            // Kayıt işlemi başarısız olduysa burada bir işlem yapabilirsiniz
+            
             alert("Kayıt işlemi sırasında bir hata oluştu.");
         }
     });

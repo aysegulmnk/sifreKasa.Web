@@ -75,16 +75,15 @@ namespace sifreKasa.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Kullanıcıyı veritabanında arayın (örneğin, kullanıcı adına göre)
                 var user = _dbContext.Users.FirstOrDefault(u => u.UserName == model.Username);
 
                 if (user != null)
                 {
-                    // Şifreyi karşılaştırın
+                 
                     string hashedPassword = HashPassword(model.Password);
                     if (user.PasswordHash == hashedPassword)
                     {
-                        // Kullanıcıyı oturum açmış olarak işaretle
+                        
                         var claims = new[]
                         {
                             new Claim(ClaimTypes.Name, user.UserName)
